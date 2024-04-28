@@ -9,7 +9,7 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/amankalra4/2023MT93187_Devops_Assignment'
             }
         }
-        stage('Install Dependencies') {
+        stage('Installing Dependencies') {
             steps {
                 sh 'npm install'
             }
