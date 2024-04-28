@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "node directory1/printVariable.js && node directory2/printTwoVariables.js",
-    "compile": "echo \" Not necessary to compile JS files\" && exit 1"
+    "compile": "echo \" Not necessary to compile JS files\""
   },
   "repository": {
     "type": "git",
