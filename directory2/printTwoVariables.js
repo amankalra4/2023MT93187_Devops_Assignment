@@ -1,5 +1,5 @@
 const x = 20;
 
-const y = 30;
+console.log("value of x is: ", x);
 
-console.log("values of x & y are: ", x, y);
+// This file is changed after merge.
