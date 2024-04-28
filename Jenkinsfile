@@ -6,28 +6,23 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/amankalra4/2023MT93187_Devops_Assignment'
             }
         }
-        stage('Install Dependencies') {
-            steps {
-                sh 'npm install'
-            }
-        }
         stage('Build') {
             steps {
-                sh 'npm run build'
+                sh 'mvn clean'
             }
         }
         stage('Compile') {
             steps {
-                sh 'npm run compile'
+                sh 'mvn compile'
             }
         }
     }
     post {
         success {
-            echo 'Build and compile successful!'
+            echo 'Build successful!'
         }
         failure {
-            echo 'Build or compile failed!'
+            echo 'Build failed!'
         }
     }
 }
